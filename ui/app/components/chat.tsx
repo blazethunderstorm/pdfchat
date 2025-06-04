@@ -142,20 +142,20 @@ const ChatComponent: React.FC = () => {
 
   return (
     <div className="flex flex-col h-full bg-gray-50">
-      {/* Header */}
+    
       <div className="bg-white border-b px-6 py-4">
         <h1 className="text-lg font-semibold text-gray-800">Chat with your PDF</h1>
         <p className="text-sm text-gray-500">Ask questions about your uploaded document</p>
       </div>
       
-      {/* Messages */}
+     
       <div className="flex-1 overflow-y-auto px-6 py-4">
         {messages.length === 0 ? (
           <div className="flex items-center justify-center h-full text-gray-500">
             <div className="text-center">
               <Bot className="w-12 h-12 mx-auto mb-4 text-gray-300" />
               <p className="text-lg font-medium mb-2">Ready to help!</p>
-              <p className="text-sm">Upload a PDF and start asking questions about it.</p>
+              <p className="text-sm">Upload a PDF and start asking questions about it</p>
             </div>
           </div>
         ) : (
@@ -183,14 +183,14 @@ const ChatComponent: React.FC = () => {
         <div ref={messagesEndRef} />
       </div>
       
-      {/* Input */}
+   
       <div className="bg-white border-t px-6 py-4">
         <div className="flex gap-3">
           <Input
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder="Ask a question about your PDF..."
+            placeholder="Ask a question about your PDF here ..."
             className="flex-1 resize-none rounded-xl border-gray-200 focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
             disabled={isLoading}
           />

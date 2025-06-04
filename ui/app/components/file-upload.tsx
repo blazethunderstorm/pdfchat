@@ -78,7 +78,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onUploadSuccess }) => {
               <>
                 <CheckCircle className="h-6 w-6 mb-2 text-green-500" />
                 <p className="font-medium text-green-600">Ready to chat!</p>
-                <p className="text-xs text-gray-500">File uploaded successfully</p>
+                <p className="text-xs text-gray-500">File uploaded</p>
               </>
             )}
           </div>
